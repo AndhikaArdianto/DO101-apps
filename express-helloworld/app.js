@@ -2,10 +2,16 @@ var express = require('express');
 app = express();
 
 app.get('/', function (req, res) {
-  response = 'This is version 2 of the app.' + '\n';
-  // res.send('Hello World!\n');
-      //send the response to the client
-      res.send(response);
+  
+  res.send('Hello World!\n');
+      
+});
+app.get('/', function (req, res) {
+  response = 'This is version 3 of the app.' + '\n';
+
+  //send the response to the client
+  res.send(response);
+
 });
 
 app.listen(8080, function () {
